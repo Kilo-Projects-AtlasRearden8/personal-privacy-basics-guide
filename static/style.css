@@ -1,0 +1,257 @@
+/* Personal Privacy Basics — static site stylesheet
+   Published by Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC. */
+
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --text: #1f2430;
+  --muted: #5b6472;
+  --brand: #0b5ed6;
+  --brand-dark: #084aad;
+  --line: #d9dde4;
+  --chip: #eef2f7;
+  --chip-text: #2a4a7a;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- Header ---------- */
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.site-header .inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.site-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-brand span { color: var(--brand); }
+
+.site-tagline {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.site-nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.site-nav a {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--chip);
+  color: var(--chip-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.site-nav a:hover { background: #e2e7ee; text-decoration: none; }
+
+.site-nav a.active { background: var(--brand); color: #ffffff; }
+
+/* ---------- Page shell ---------- */
+
+.page {
+  max-width: 720px;
+  margin: 32px auto;
+  padding: 0 20px 64px;
+}
+
+.page h1 {
+  font-size: 2rem;
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.page-intro {
+  color: var(--muted);
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 32px 20px 64px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+footer a { color: var(--brand); }
+
+/* ---------- Content ---------- */
+
+h2 {
+  font-size: 1.35rem;
+  margin: 32px 0 10px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+}
+
+h3 { font-size: 1.1rem; margin: 24px 0 8px; }
+
+p { margin: 0 0 14px; }
+
+ul, ol { margin: 6px 0 16px; padding-left: 22px; }
+
+li { margin-bottom: 6px; }
+
+.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--chip);
+  padding: 1px 6px;
+  border-radius: 4px;
+  color: var(--chip-text);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 14px 0;
+  font-size: 0.92rem;
+}
+
+th, td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th { background: var(--chip); color: var(--chip-text); }
+
+blockquote {
+  border-left: 4px solid var(--brand);
+  margin: 14px 0;
+  padding: 10px 16px;
+  background: var(--surface);
+  color: var(--muted);
+  font-style: italic;
+  border-radius: 0 6px 6px 0;
+}
+
+.callout {
+  background: #fff6e5;
+  border: 1px solid #e7d6a8;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 16px 0;
+  font-size: 0.95rem;
+}
+
+.callout b { color: #7a5a00; }
+
+.chip-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* ---------- Checklist ---------- */
+
+.checklist-page h2 {
+  padding-top: 4px;
+}
+
+.checklist-group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin: 0 0 20px;
+  page-break-inside: avoid;
+}
+
+.checklist-group h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 4px;
+}
+
+.task-list li {
+  padding: 7px 0;
+  border-bottom: 1px solid #f0f2f5;
+  font-size: 0.95rem;
+}
+
+.task-list li:last-child { border-bottom: none; }
+
+.task-list input {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand);
+}
+
+.signdate {
+  margin-top: 34px;
+  font-size: 0.95rem;
+}
+
+.signdate p { margin: 14px 0; }
+
+/* ---------- Print ---------- */
+
+@media print {
+  body { background: #ffffff; }
+  .site-header, .site-nav, footer, a[href]::after { display: none !important; }
+  .page { margin: 0; padding: 0 10px; }
+  h2 { page-break-after: avoid; }
+  .checklist-group { border: 1px solid #999; page-break-inside: avoid; }
+  .task-list li { border-bottom: 1px solid #ccc; }
+  .page { max-width: 100%; }
+}

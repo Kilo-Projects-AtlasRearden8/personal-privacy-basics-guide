@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1. Locking down your accounts — Personal Privacy Basics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="site-brand" href="index.html">Personal Privacy <span>Basics</span></a>
+    <div class="site-tagline">A beginner’s guide · Asdale Dynamics, LLC</div>
+  </div>
+</header>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Overview</a></li>
+    <li><a href="accounts.html" class="active">1. Accounts</a></li>
+    <li><a href="browsers.html">2. Browsers</a></li>
+    <li><a href="phones.html">3. Phones</a></li>
+    <li><a href="ai-training.html">4. AI training opt-out</a></li>
+    <li><a href="data-brokers.html">5. Data brokers</a></li>
+    <li><a href="scams.html">6. Spotting scams</a></li>
+    <li><a href="checklist.html">Printable checklist</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <h1>Locking down your accounts</h1>
+  <p class="page-intro">Your accounts — email, banking, shopping, social media — are the front doors to your digital life. This chapter walks you through locking them down, step by step. You do not need to be technical. You just need about an hour and a willingness to click through some settings.</p>
+  <p class="page-intro">Every name, email, phone number, and address in this guide is made up. Do not copy them as if they were real, and never type your own real details into examples.</p>
+
+  <h2>Step 1: Use strong, unique passwords</h2>
+  <p>A strong password is long and hard to guess. A unique password means you use a different one for every account.</p>
+  <p>Why it matters: if one company gets hacked and your password leaks, attackers try that same password on your other accounts. If you reuse passwords, one break-in becomes many.</p>
+
+  <h3>How to do it</h3>
+  <ol>
+    <li><b>Get a password manager.</b> This is an app that remembers your passwords for you. You only need to remember one strong “master password” to unlock it. Examples: Bitwarden, 1Password, Apple Passwords (iCloud Keychain), Google Password Manager.</li>
+    <li><b>Let the password manager create passwords.</b> When you make or change an account, have the manager suggest a long random password (16+ characters). You do not need to memorize it.</li>
+    <li><b>Save the password</b> in the manager before you finish creating the account.</li>
+    <li><b>Change your most important passwords first:</b> email, banking, password manager itself, phone accounts (Apple/Google), and anything with payment info stored.</li>
+  </ol>
+
+  <h3>Example (fake)</h3>
+  <p>Instead of reusing <code>Spring2024!</code> everywhere, your password manager might create:</p>
+  <ul>
+    <li>Email: <code>kP9#mV2&amp;xQ7!wL5r</code></li>
+    <li>Bank: <code>zR4@bN8!tY3*hW6j</code></li>
+    <li>Shopping: <code>mC2$fG7^pD5!vK9n</code></li>
+  </ul>
+  <p>You never see most of these again — the manager fills them in for you.</p>
+
+  <h3>Master password tips</h3>
+  <ul>
+    <li>Make it long: four or five random words strung together works well (for example: <code>purple-train-socks-library-planet</code>). Do not use that exact phrase — make up your own.</li>
+    <li>Do not store the master password in the password manager. Write it down on paper and keep it somewhere safe at home, or memorize it.</li>
+    <li>Never share your master password with anyone, including people claiming to be “tech support.”</li>
+  </ul>
+
+  <h2>Step 2: Turn on two-factor authentication (2FA)</h2>
+  <p>2FA means that even if someone steals your password, they still cannot get into your account without a second piece of proof — usually a code from your phone.</p>
+
+  <h3>How to do it</h3>
+  <ol>
+    <li>Go to Settings → Security (or “Sign-in &amp; security”) in each account.</li>
+    <li>Look for “Two-factor authentication,” “Two-step verification,” or “MFA.”</li>
+    <li>Choose <b>authenticator app</b> as the method if offered (Google Authenticator, Microsoft Authenticator, Authy, or your password manager’s built-in authenticator).</li>
+    <li>Scan the QR code with the app, then type in the six-digit code it shows to finish setup.</li>
+    <li>Save the <b>backup codes</b> the site gives you. Print them or write them down and keep them with your master password. These let you in if you lose your phone.</li>
+  </ol>
+
+  <h3>Authenticator app vs. text message (SMS)</h3>
+  <p>Authenticator apps are safer than SMS codes. Attackers can sometimes hijack your phone number and receive your texts. Use an app when you can; SMS is still better than nothing.</p>
+
+  <div class="callout"><b>Example setup (fake)</b><br>
+  Service: <code>examplebank.example</code><br>
+  You open: Settings → Security → Two-factor authentication → Authenticator app<br>
+  You scan a QR code with your authenticator app<br>
+  The app shows: <code>482 917</code><br>
+  You type <code>482917</code> on the website → 2FA is on
+  </div>
+
+  <h2>Step 3: Lock down your email account first</h2>
+  <p>Your email is the master key. If someone gets into your email, they can request password resets for almost everything else.</p>
+  <ol>
+    <li>Put a strong, unique password on your email.</li>
+    <li>Turn on 2FA (authenticator app).</li>
+    <li>Check the recovery email and phone number listed on the account. Make sure they belong to you and are current.</li>
+    <li>Remove any old phone numbers or email addresses you no longer control.</li>
+    <li>Turn on login alerts if the service offers them (you get notified when someone signs in from a new device).</li>
+  </ol>
+
+  <h2>Step 4: Review what is connected to your accounts</h2>
+  <p>Many accounts let you see which devices are signed in and which apps have access.</p>
+  <h3>How to do it</h3>
+  <ol>
+    <li>In each important account, find “Devices,” “Where you’re signed in,” or “Active sessions.”</li>
+    <li>Sign out of any device you do not recognize or no longer use (old phones, old laptops, a friend’s computer you borrowed once).</li>
+    <li>Find “Connected apps,” “Third-party access,” or “Apps with access to your account.”</li>
+    <li>Remove access for apps and services you no longer use. That quiz website from 2016 probably does not still need access to your contacts.</li>
+  </ol>
+
+  <h2>Step 5: Check privacy settings on social media</h2>
+  <ol>
+    <li>Set your profile to “private” or “friends only” if you do not need to be public.</li>
+    <li>Limit who can see your friends list, birthday, phone number, and email address.</li>
+    <li>Turn off settings that let people find you by your email or phone number, unless you want that.</li>
+    <li>Review past posts and delete anything that shares too much (your address, vacation plans, photos of your ID or credit card).</li>
+  </ol>
+
+  <h2>Step 6: Know if your data has been in a breach</h2>
+  <ol>
+    <li>Use a free breach-check service (for example, haveibeenpwned.com) with your email address.</li>
+    <li>If a breach shows up for an account you still use, change that password right away — and any other account where you reused it.</li>
+    <li>If the breach involved payment info, watch your bank and card statements closely for charges you did not make.</li>
+  </ol>
+  <p class="chip-note">What these services do (simple version): you type in your email. The service checks whether that email appeared in any known data breaches and tells you which ones. It does not reveal your password.</p>
+
+  <h2>Step 7: Security questions are not secure</h2>
+  <p>Many sites ask “What was your first pet’s name?” These answers are often guessable or findable online.</p>
+  <h3>Better approach</h3>
+  <ul>
+    <li>Treat security questions like passwords: make up answers and save them in your password manager.</li>
+    <li>Example (fake): Q: “First pet’s name?” A: <code>Refrigerator-Blue-42</code>. Save that in your password manager next to the account.</li>
+    <li>Do not use real answers like your mother’s actual maiden name or your actual first school.</li>
+  </ul>
+
+  <h2>Quick checklist for this chapter</h2>
+  <ul>
+    <li>Password manager installed</li>
+    <li>Strong, unique password on email, banking, and password manager</li>
+    <li>2FA turned on (authenticator app preferred) for email and banking</li>
+    <li>Backup codes saved</li>
+    <li>Old devices signed out</li>
+    <li>Unused connected apps removed</li>
+    <li>Social media set to private / limited</li>
+    <li>Breach check run for your email</li>
+    <li>Security question answers made up and saved</li>
+  </ul>
+  <p class="chip-note">You do not have to do all of this today. Pick one account and start there.</p>
+</div>
+
+<footer>
+  &copy; 2026 Asdale Dynamics, LLC. MIT License. Every example uses made-up personal information. &nbsp;<a href="index.html">Back to overview</a>
+</footer>
+
+</body>
+</html>

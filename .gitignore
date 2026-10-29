@@ -1,0 +1,28 @@
+# Personal Privacy Basics — ignore list
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Build / output
+_site/
+dist/
+build/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Misc
+.env
+.env.local
+*.env

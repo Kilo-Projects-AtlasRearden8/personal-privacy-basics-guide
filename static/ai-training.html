@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4. Opting out of AI training — Personal Privacy Basics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="site-brand" href="index.html">Personal Privacy <span>Basics</span></a>
+    <div class="site-tagline">A beginner’s guide · Asdale Dynamics, LLC</div>
+  </div>
+</header>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Overview</a></li>
+    <li><a href="accounts.html">1. Accounts</a></li>
+    <li><a href="browsers.html">2. Browsers</a></li>
+    <li><a href="phones.html">3. Phones</a></li>
+    <li><a href="ai-training.html" class="active">4. AI training opt-out</a></li>
+    <li><a href="data-brokers.html">5. Data brokers</a></li>
+    <li><a href="scams.html">6. Spotting scams</a></li>
+    <li><a href="checklist.html">Printable checklist</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <h1>Opting out of AI training</h1>
+  <p class="page-intro">Many AI companies use what people type into their AI tools to train future versions of their models. That means your conversations could be read by human reviewers, stored for a long time, or used to teach the AI to write like you.</p>
+  <p class="page-intro">This chapter shows you how to turn that off in popular AI tools. It does not delete past conversations — it mostly stops future ones from being used for training.</p>
+  <p class="page-intro">Every account name and email in this guide is made up.</p>
+
+  <h2>Step 1: ChatGPT (OpenAI)</h2>
+  <p><b>On the web</b></p>
+  <ol>
+    <li>Log in to chatgpt.example (use the real site you normally use; <code>example</code> addresses here are placeholders).</li>
+    <li>Click your profile → Settings → Data controls.</li>
+    <li>Turn off <b>“Improve the model for everyone.”</b> (In some versions this is called “Chat history &amp; training” — turn it off.)</li>
+    <li>With this off, your conversations are not used to train OpenAI’s models.</li>
+  </ol>
+  <p><b>On iPhone/Android</b> — Open the ChatGPT app → profile icon → Settings → Data controls. Turn off “Improve the model for everyone.”</p>
+  <p><b>Delete your data</b> — Settings → Data controls → Clear chat history (or Manage → Delete). You can also request deletion of your account data through OpenAI’s privacy portal.</p>
+  <p class="chip-note">Note: even with training off, OpenAI keeps conversations for about 30 days for abuse monitoring, then deletes them.</p>
+
+  <h2>Step 2: Claude (Anthropic)</h2>
+  <ol>
+    <li>Log in to claude.example.</li>
+    <li>Click your profile → Settings.</li>
+    <li>Turn off <b>“Train on my content”</b> (or uncheck “Allow Claude to use your conversations for training”).</li>
+    <li>Free accounts: conversations may be reviewed by human contractors for safety. Paid (Pro/Team/Enterprise) accounts are opted out of training by default — check your settings to confirm.</li>
+  </ol>
+
+  <h2>Step 3: Gemini (Google)</h2>
+  <ol>
+    <li>Log in to gemini.example.</li>
+    <li>Select Activity → Turn off Gemini Apps Activity, or set it to auto-delete after 3 or 36 months.</li>
+    <li>In Settings, look for “Train on my content” or similar and turn it off.</li>
+    <li>Your Google account settings (myaccount.google.com → Data &amp; privacy) also control whether Google uses your data for AI improvements.</li>
+  </ol>
+
+  <h2>Step 4: Microsoft Copilot</h2>
+  <ol>
+    <li>Log in to copilot.microsoft.com with your Microsoft account.</li>
+    <li>Go to Settings → Privacy.</li>
+    <li>Turn off options that let Microsoft use your chat data to train models.</li>
+    <li>If you use Copilot with a work or school account (Microsoft 365), your organization may already have data protection turned on — ask your IT admin if unsure.</li>
+  </ol>
+
+  <h2>Step 5: Meta AI (Facebook, Instagram, Messenger, WhatsApp)</h2>
+  <p>Meta may use posts and messages to train AI. Options vary by country (for example, EU/UK users have stronger opt-out rights under GDPR).</p>
+  <ol>
+    <li>In Facebook or Instagram: Settings → Privacy → Meta AI (or “AI at Meta”).</li>
+    <li>Look for an option to object to your data being used for AI training and submit it.</li>
+    <li>In WhatsApp: Settings → Privacy → Chats — avoid sending sensitive info to the Meta AI button; there is no full training opt-out in all regions yet.</li>
+  </ol>
+
+  <h2>Step 6: Other AI tools (writing assistants, image generators, code tools)</h2>
+  <p>For any AI tool you use:</p>
+  <ol>
+    <li>Look in Settings → Privacy or Settings → Data.</li>
+    <li>Search “[tool name] opt out of AI training” to find the company’s instructions.</li>
+    <li>If you cannot find an opt-out, assume your input may be used for training — do not type in passwords, financial details, health info, or other people’s private data.</li>
+  </ol>
+
+  <h2>Step 7: Local AI (runs on your own computer)</h2>
+  <p>If you want AI that never sends your data to a company, run models locally on your own machine. Examples: Ollama, LM Studio, Jan, or llama.cpp. These run offline after you download the model, and nothing leaves your computer. This chapter series does not cover setup in detail, but local AI is the most private option.</p>
+
+  <h2>What opting out does and does not do</h2>
+  <table>
+    <tr><th>Does</th><th>Does not</th></tr>
+    <tr><td>Stops future conversations from being used to train the model (in most tools)</td><td>Delete conversations you already had (you must delete those separately)</td></tr>
+    <tr><td>Reduce how much human reviewers can see</td><td>Guarantee the company never sees anything (abuse monitoring may still keep data briefly)</td></tr>
+    <tr><td>Apply to the account you changed</td><td>Apply to other accounts or other people’s chats with you</td></tr>
+  </table>
+
+  <h2>Quick checklist for this chapter</h2>
+  <ul>
+    <li>ChatGPT: “Improve the model for everyone” turned off</li>
+    <li>Claude: “Train on my content” turned off</li>
+    <li>Gemini: Gemini Apps Activity turned off or set to auto-delete</li>
+    <li>Copilot: training use turned off (check with IT for work accounts)</li>
+    <li>Meta AI: objection/opt-out submitted (where available)</li>
+    <li>Other AI tools: privacy settings reviewed</li>
+    <li>Rule adopted: never paste passwords, financial data, health details, or others’ private info into AI tools</li>
+  </ul>
+</div>
+
+<footer>
+  &copy; 2026 Asdale Dynamics, LLC. MIT License. Every example uses made-up personal information. &nbsp;<a href="index.html">Back to overview</a>
+</footer>
+
+</body>
+</html>
